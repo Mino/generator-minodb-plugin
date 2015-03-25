@@ -5,8 +5,8 @@ var BasicVal = FieldVal.BasicVal;
 
 module.exports = generators.Base.extend({
 	initializing: function() {
-		this.project_name = 'minodb_plugin';
-		this.class_name = 'MinoDbPlugin';
+		this.project_name = 'minodb-plugin';
+		this.class_name = 'MinoDBPlugin';
 		this.mongodb_url = 'mongodb://127.0.0.1:27017/minodb';
 	},
 	prompting: function() {
@@ -31,7 +31,7 @@ module.exports = generators.Base.extend({
 				choices: [{
 		   	      name: "SAFE",
 		   	      checked: true
-		   	    }
+		   	    }]
 		   	},
 		   	{
 			    type: "input",
