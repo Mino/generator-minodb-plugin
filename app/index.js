@@ -31,10 +31,7 @@ module.exports = generators.Base.extend({
 				choices: [{
 		   	      name: "SAFE",
 		   	      checked: true
-		   	    },
-		   	    {
-		   	    	name: "<ARCUS"
-		   	    }]
+		   	    }
 		   	},
 		   	{
 			    type: "input",
