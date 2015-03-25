@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			var plugin_path = '{{{plugin_path}}}';
+		</script>
+
+		<link rel="stylesheet" href="{{{plugin_path}}}style.css" type="text/css" />
+		<script src="{{{plugin_path}}}frontend.js"></script>
+	</head>
+<body>
+
+	<% if (include_safe) {%>
+	<noscript>
+	This site requires Javascript
+	</noscript>
+	<%} else {%>
+		<%=class_name%> config server
+	<%}%>
+	
+</body>
+</html>

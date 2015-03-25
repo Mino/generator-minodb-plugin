@@ -1,0 +1,28 @@
+{
+  "name": "<%=project_name%>",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./<%=project_name%>.js",
+  "dependencies": {
+    "express": "*",
+    "tracer": "*",
+    "minodb": "Mino/MinoDB#develop",
+    "extend": "MarcusLongmuir/extend",
+    "body-parser": "*",
+    "mustache-express": "*"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.1",
+    "gulp-nodemon" : "*",
+    "gulp-util": "^2.2.14",
+    "gulp-imports" : "MarcusLongmuir/gulp-imports",
+    "gulp-less": "^1.2.3",
+    "gulp-concat": "^2.2.0",
+    "gulp-watch": "^0.6.2",
+    "gulp-plumber": "^0.6.1",
+    "bower": "*"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  }
+}
