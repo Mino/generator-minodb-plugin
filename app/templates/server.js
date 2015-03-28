@@ -35,7 +35,7 @@ minodb.create_user({
 }, function(err, res){
 	logger.log(err, res);
 
-	var <%=class_name%> = require('./<%=project_name%>');
+	var <%=class_name%> = require('./<%=class_name%>');
 	var plugin = new <%=class_name%>({
 		user: minodb_username
 	});

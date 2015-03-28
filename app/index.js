@@ -75,11 +75,14 @@ module.exports = generators.Base.extend({
 		    );
 		}.bind(this);
 
-		copy_file('plugin.js', this.options.project_name+'.js');
+		copy_file('plugin.js', this.options.class_name+'.js');
 		copy_file('server.js');
 		copy_file('package.json');
 		copy_file('bower.json');
 		copy_file('gulpfile.js');
+		copy_file('.gitignore');
+		copy_file('README.md');
+		copy_file('test');
 		copy_file('config_server/ConfigServer.js');
 		copy_file('config_server/views/index.mustache');
 		copy_file('config_server/public_src/init.js');
@@ -92,7 +95,8 @@ module.exports = generators.Base.extend({
 		var generator = this;
 		this.npmInstall(undefined, undefined, function() {
 			generator.spawnCommand('gulp', ['js']);
-			generator.spawnCommand('gulp', ['less']);		
+			generator.spawnCommand('gulp', ['less']);
+			generator.spawnCommand('gulp', ['test']);		
 		});
 	}
 
